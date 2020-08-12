@@ -1,0 +1,191 @@
+/* Navbar */
+nav{
+  background-color: #000000;
+}
+
+.navbar{
+  padding-left: 0px !important;
+}
+
+.nav-link {
+  padding: 0 20px !important;
+}
+
+.navbar-brand {
+  padding: 0 0 0 5%;
+}
+
+
+/* Title */
+
+#title {
+  background-image: url("../Imagens/Fundo-inicial.png");
+  background-size: 100% 100%;
+  color: black;
+  height: 600px;
+  width: 100%;
+}
+
+#title .container-fluid {
+  padding: 15% 5%;
+}
+
+#title h1 {
+  font-family: "Coda Caption", sans-serif;
+  font-size: 5rem;
+}
+
+/* What's it? */
+
+#whats-it {
+  background-color: #222831;
+  color: #eeeeee;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+#whats-it .container-fluid {
+  padding: 5% 15% 5%;
+}
+
+#whats-it h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+
+.destaques{
+  background-color: #222831;
+  box-shadow: 0.5px 0.5px 2px 0px #eeeeee; /* O Original tem 1px 1px 3px 0xp black*/
+  padding: 3% 5% 2%;
+}
+
+.destaques-cima{
+  max-width: 66.6666666%;
+}
+
+#whats-it .container-fluid .row .col-md-6:nth-child(1) .destaques{
+  margin-left: auto;
+  margin-bottom: 30px;
+}
+
+.destaques-cima.direita{
+  margin-left: 0;
+}
+
+.imagens-destaque{
+  height: 50px;
+  margin-bottom: 5px;
+}
+
+#whats-it p{
+  margin-bottom: 0px;
+} 
+
+/* Universe */
+
+#universe {
+  background-color: #eeeeee;
+  color: #222831;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+#universe .container-fluid {
+  padding: 7% 10%;
+}
+
+#universe h2 {
+  font-family: "Coda Caption", sans-serif;
+  font-size: 3rem;
+  margin: 0;
+  padding-bottom: 10%;
+}
+
+/* Who we are */
+
+#who-we-are {
+  background-color: #eeeeee;
+}
+
+#who-we-are .container-fluid{
+  padding: 5% 12%;
+}
+
+#who-we-are h2 {
+  font-family: "Coda Caption", sans-serif;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+#who-we-are p{
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+#who-we-are img{
+  position: absolute;
+  width: 110%;
+  left: 15%;
+  margin-left: -15px;
+  z-index: 1;
+
+  
+  top: 50%;
+  margin-top: -52%;
+}
+
+/* To Watch */
+
+#to-watch {
+  background-color: #222831;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+#to-watch .container-fluid {
+  padding: 5% 15%;
+}
+
+#to-watch h1{
+  font-family: "Coda Caption", sans-serif;
+  font-size: 4rem;
+}
+
+.btn{
+  margin-top: 20px;
+}
+
+#to-watch h4{
+  margin-bottom: 0px;
+}
+
+.btn-outline-light:hover{
+  background-color: #6441a5 !important;
+  color: #eeeeee;
+}
+
+/* Footer */
+
+#footer .container-fluid{
+  background-color: #000000;
+  color: #eeeeee;
+  text-align: center;
+  padding: 2% 0% 2%;
+}
+
+#footer p{
+  font-family: "Roboto";
+  font-weight: 100;
+  font-size: 15px;
+}
+
+#footer a{
+  font-size: 20px;
+  margin: 10px;
+  margin-bottom: 15px;
+}
