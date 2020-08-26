@@ -30,6 +30,16 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap"
+    rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- CSS -->
     <link rel="stylesheet" href="CSS/styles.css" />
 
@@ -38,16 +48,6 @@
       src="https://kit.fontawesome.com/cef62e9057.js"
       crossorigin="anonymous"
     ></script>
-
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap"
-      rel="stylesheet"
-    />
   </head>
 
   <body>
@@ -78,7 +78,7 @@
               <a class="nav-link nav-title" href="#to-watch">Onde Assistir</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-title" href="#universe"
+              <a class="nav-link nav-title coming-soon" href="#universe"
                 >Explore o Universo</a
               >
             </li>
@@ -89,10 +89,10 @@
     <!-- Title -->
     <div id="title">
       <div class="container-fluid">
-        <h1>
-          As Crônicas <br />
-          de Bralsi
-        </h1>
+        <div class="title-padding">
+          <h1>As Crônicas de Bralsi
+          </h1>
+        </div>
       </div>
     </div>
 
@@ -100,7 +100,7 @@
     <div id="whats-it">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-lg-6 col-md-6">
             <div class="destaques destaques-cima">
               <img class="imagens-destaque" src="Imagens/O que e.png" alt="" />
               <h3>O que é?</h3>
@@ -112,10 +112,10 @@
             </div>
           </div>
 
-          <div class="col-md-6">
+          <div class="col-lg-6 col-md-6">
             <div class="destaques destaques-cima">
               <img class="imagens-destaque" src="Imagens/pngwing.com.png" alt="" />
-              <h3>Plataformas Usadas</h3>
+              <h3>Plataformas</h3>
               <p>
                 Atualmente estamos usando o Roll20 para
                 visualização e combate e estamos usando o Discord para a
@@ -126,33 +126,32 @@
         </div>
 
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-lg-4 col-md-6">
             <div class="destaques">
               <img class="imagens-destaque" src="Imagens/internet.png" alt="" />
               <h3>Onde</h3>
               <p>
-                Todas as sessões são feitas enquanto fazemos lives no nosso 
-                <a href="https://www.twitch.tv/lixeiraexe" target="blank">canal da twitch</a>
-                
+                Todas as sessões do RPG são feitas enquanto fazemos lives no nosso 
+                <a href="https://www.twitch.tv/lixeiraexe" target="blank">canal oficial da twitch</a>
               </p>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-lg-4 col-md-6">
             <div class="destaques">
               <img class="imagens-destaque" src="Imagens/clock.png" alt="" />
               <h3>Horário</h3>
               <p>
-                Todas as sessões são feitas no horário de 22h até 1h ou de
-                22:30h até 1h.
+                Todas as sessões desse RPG são feitas no horário de 22h até 1h ou de
+                22:30h até 1:30h.
               </p>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-lg-4">
             <div class="destaques">
               <img class="imagens-destaque" src="Imagens/Calendario.png" alt="" />
               <h3>Dias</h3>
               <p>
-                As sessões sempre são feitas em três dias da semana, sendo eles:
+                As sessões do RPG sempre são feitas em três dias da semana, sendo eles:
                 segunda, quarta e sexta.
               </p>
             </div>
@@ -165,7 +164,7 @@
     <div id="who-we-are">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-lg-6">
             <h2>Quem Somos?</h2>
             <p>
               Nós somos o Lixeira.exe, um pequeno canal focado em conteudos
@@ -176,7 +175,7 @@
               Legends e Don't Starve Together.
             </p>
           </div>
-          <div class="col-md-6">
+          <div class="col-lg-6 col-img">
             <img src="Imagens/lixeira-symbol.png" alt="" />
           </div>
         </div>
@@ -203,11 +202,24 @@
     <!-- Footer -->
     <div id="footer">
       <div class="container-fluid">
-        <a class="fab fa-twitch"></a>
-        <a class="fab fa-instagram"></a>
-        <a class="fab fa-youtube"></a>
+        <a class="fab fa-twitch link-footer" href="https://www.twitch.tv/lixeiraexe" target="about-blank"></a>
+        <a class="fab fa-instagram link-footer" href="https://www.instagram.com/lixeiraexe/" target="about-blank"></a>
+        <a class="fab fa-youtube link-footer" href="https://www.youtube.com/c/LIXEIRAEXE/featured" target="about-blank"></a>
         <p>© Copyright 2020 lixeiraexe</p>
       </div>
     </div>
+    <script src="index.js" charset="utf-8"></script>
   </body>
 </html>
+
+<!-- 
+IDEIAS PARA O FUTURO
+  1 - Ao clicar em certos nomes especificos como RPG 5e, Roll20 e Discord, aparecerá uma pequena descrição 
+  do que são essas coisas.
+  2 - Adicionar ao cursor o simbolo de help aos locais com nomes especificos
+  3 - Na secao "Quem somos", adicionar links para as redes sociais (assim como no footer)
+  4 - Pensar como sera e criar a secao Universo
+  5 - Ao inves de Redimensionar a img da pagina inicial em telas menores, certas partes dela deveriam ser 
+  focadas
+
+-->
