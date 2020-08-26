@@ -27,13 +27,65 @@ nav{
 }
 
 #title .container-fluid {
-  padding: 15% 5%;
+  padding: 5% 5%;
+  height: 100%;
+}
+
+#title .title-padding{
+  height: 100%;
+  padding-right: 50%;
+  display:table;
 }
 
 #title h1 {
   font-family: "Coda Caption", sans-serif;
   font-size: 5rem;
+  display:table-cell; 
+  vertical-align:middle;
 }
+
+@media (max-width: 1350px) and (min-width: 1201px){
+  #title .title-padding{
+    padding-right: 45%;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 993px){
+  #title .title-padding{
+    padding-right: 35%;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 0px){
+  #title h1{
+    display: inline-block;
+  }
+  #title .title-padding{
+    padding-right: 0;
+    text-align: center;
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 650px) and (min-width: 586px){
+  #title .title-padding{
+    padding-top: 60px;
+  }
+  #title h1{
+    font-size: 4.5rem;    
+  }
+}
+
+@media (max-width: 585px){
+  #title .title-padding{
+    padding-top: 70px;
+  }
+  #title h1{
+    font-size: 4rem;
+  } 
+}
+
+
 
 /* What's it? */
 
@@ -56,7 +108,7 @@ nav{
 
 .destaques{
   background-color: #222831;
-  box-shadow: 0.5px 0.5px 2px 0px #eeeeee; /* O Original tem 1px 1px 3px 0xp black*/
+  
   padding: 3% 5% 2%;
 }
 
@@ -64,12 +116,12 @@ nav{
   max-width: 66.6666666%;
 }
 
-#whats-it .container-fluid .row .col-md-6:nth-child(1) .destaques{
+.destaques{
   margin-left: auto;
   margin-bottom: 30px;
 }
 
-.destaques-cima.direita{
+.col-lg-6.col-md-6:nth-child(2) .destaques{
   margin-left: 0;
 }
 
@@ -81,6 +133,15 @@ nav{
 #whats-it p{
   margin-bottom: 0px;
 } 
+
+@media (max-width: 992px){
+  .destaques-cima{
+    max-width: 100%;
+  }
+  #whats-it .container-fluid {
+    padding: 5% 15% 5%;
+  }
+}
 
 /* Universe */
 
@@ -131,10 +192,34 @@ nav{
   left: 15%;
   margin-left: -15px;
   z-index: 1;
-
-  
   top: 50%;
   margin-top: -52%;
+}
+
+
+@media (max-width: 992px){
+  #who-we-are .col-lg-6{
+    text-align: center;
+  }
+
+  #who-we-are img{
+    position: static;
+    width: 80%;
+    left: 0;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 650px){
+  #who-we-are h2{
+    font-size: 2.5rem;    
+  }
+  #who-we-are p{
+    font-size: 1.25rem;    
+  }
 }
 
 /* To Watch */
@@ -153,7 +238,7 @@ nav{
 
 #to-watch h1{
   font-family: "Coda Caption", sans-serif;
-  font-size: 4rem;
+  font-size: 3.75rem;
 }
 
 .btn{
@@ -169,11 +254,23 @@ nav{
   color: #eeeeee;
 }
 
+@media (max-width: 650px) and (min-width: 586px){
+  #to-watch h1{
+    font-size: 3.25rem;    
+  }
+}
+
+@media (max-width: 585px){
+  #to-watch h1{
+    font-size: 3rem;
+  } 
+}
+
 /* Footer */
 
 #footer .container-fluid{
   background-color: #000000;
-  color: #eeeeee;
+  color: #eeeeee !important;
   text-align: center;
   padding: 2% 0% 2%;
 }
@@ -184,8 +281,17 @@ nav{
   font-size: 15px;
 }
 
-#footer a{
+.link-footer{
   font-size: 20px;
   margin: 10px;
   margin-bottom: 15px;
+}
+
+.link-footer:visited{
+  color: #eeeeee;
+}
+
+.link-footer:hover{
+  color: #00adb5;
+  text-decoration: none;
 }
