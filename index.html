@@ -88,7 +88,7 @@
     </div>
     <!-- Title -->
     <div id="title">
-      <div class="container-fluid">
+      <div class="section-basics">
         <div class="title-padding">
           <h1>As Crônicas de Bralsi
           </h1>
@@ -98,12 +98,12 @@
 
     <!-- What's it? -->
     <div id="whats-it">
-      <div class="container-fluid">
+      <div class="section-basics">
         <div class="row">
-          <div class="col-lg-6 col-md-6">
-            <div class="destaques destaques-cima">
+          <div class="col-lg-4 col-md-6">
+            <div class="destaques">
               <img class="imagens-destaque" src="Imagens/O que e.png" alt="" />
-              <h3>O que é?</h3>
+              <p class="p-like-title">O que é?</p>
               <p>
                 É um RPG baseado no d&d 5e, mas algumas regras, 
                 itens e monstros foram modificados ou criados para tornar o jogo mais 
@@ -112,10 +112,10 @@
             </div>
           </div>
 
-          <div class="col-lg-6 col-md-6">
-            <div class="destaques destaques-cima">
+          <div class="col-lg-4 col-md-6">
+            <div class="destaques">
               <img class="imagens-destaque" src="Imagens/pngwing.com.png" alt="" />
-              <h3>Plataformas</h3>
+              <p class="p-like-title">Plataformas</p>
               <p>
                 Atualmente estamos usando o Roll20 para
                 visualização e combate e estamos usando o Discord para a
@@ -123,46 +123,45 @@
               </p>
             </div>
           </div>
-        </div>
 
-        <div class="row">
           <div class="col-lg-4 col-md-6">
             <div class="destaques">
               <img class="imagens-destaque" src="Imagens/internet.png" alt="" />
-              <h3>Onde</h3>
+              <p class="p-like-title">Onde</p>
               <p>
                 Todas as sessões do RPG são feitas enquanto fazemos lives no nosso 
                 <a href="https://www.twitch.tv/lixeiraexe" target="blank">canal oficial da twitch</a>
               </p>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="destaques">
-              <img class="imagens-destaque" src="Imagens/clock.png" alt="" />
-              <h3>Horário</h3>
-              <p>
-                Todas as sessões desse RPG são feitas no horário de 22h até 1h ou de
-                22:30h até 1:30h.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="destaques">
+
+          <div class="col-lg-6 col-md-6">
+            <div class="destaques destaques-baixo">
               <img class="imagens-destaque" src="Imagens/Calendario.png" alt="" />
-              <h3>Dias</h3>
+              <p class="p-like-title">Dias</p>
               <p>
                 As sessões do RPG sempre são feitas em três dias da semana, sendo eles:
                 segunda, quarta e sexta.
               </p>
             </div>
           </div>
-        </div>
+          <div class="col-lg-6">
+            <div class="destaques destaques-baixo direita">
+              <img class="imagens-destaque" src="Imagens/clock.png" alt="" />
+              <p class="p-like-title">Horário</p>
+              <p>
+                Todas as sessões desse RPG são feitas no horário de 22h até 1h ou de
+                22:30h até 1:30h.
+              </p>
+            </div>
+          </div> 
+        </div>  
       </div>
     </div>
 
     <!-- Who we are -->
     <div id="who-we-are">
-      <div class="container-fluid">
+      <div class="section-basics">
         <div class="row">
           <div class="col-lg-6">
             <h2>Quem Somos?</h2>
@@ -183,25 +182,17 @@
     </div>
 
     <!-- To watch -->
-    <div id="to-watch">
-      <div class="container-fluid">
+    <div id="to-watch" class="">
+      <div class="section-basics">
         <h1>Venha assistir as sessões das Crônicas de Bralsi</h1>
-        <a href="https://www.twitch.tv/lixeiraexe/videos?filter=collections" role="button" class="btn btn-outline-light btn-lg" target="blank"><h4>Twitch</h4></a>
+        <a href="https://www.twitch.tv/lixeiraexe/videos?filter=collections" role="button" class="btn btn-outline-light btn-lg" target="blank"><h4>Assista agora</h4></a>
 
       </div>
     </div>
 
-    <!-- Universe-->
-    <!--
-    <div id="universe">
-      <div class="container-fluid">
-        <h2>Descubra mais sobre esse mundo</h2>
-      </div>
-    </div>
-    -->
     <!-- Footer -->
     <div id="footer">
-      <div class="container-fluid">
+      <div class="section-basics">
         <a class="fab fa-twitch link-footer" href="https://www.twitch.tv/lixeiraexe" target="about-blank"></a>
         <a class="fab fa-instagram link-footer" href="https://www.instagram.com/lixeiraexe/" target="about-blank"></a>
         <a class="fab fa-youtube link-footer" href="https://www.youtube.com/c/LIXEIRAEXE/featured" target="about-blank"></a>
@@ -213,13 +204,31 @@
 </html>
 
 <!-- 
-IDEIAS PARA O FUTURO
-  1 - Ao clicar em certos nomes especificos como RPG 5e, Roll20 e Discord, aparecerá uma pequena descrição 
+Próximas Mudanças
+  1 - Posicionar o cursor em certos nomes como RPG 5e, Roll20 e Discord, aparecerá uma pequena descrição 
   do que são essas coisas.
   2 - Adicionar ao cursor o simbolo de help aos locais com nomes especificos
-  3 - Na secao "Quem somos", adicionar links para as redes sociais (assim como no footer)
-  4 - Pensar como sera e criar a secao Universo
-  5 - Ao inves de Redimensionar a img da pagina inicial em telas menores, certas partes dela deveriam ser 
-  focadas
+  3 - Remodelar o css dos links que estao no corpo do texto (colocando simbolo no cursor e
+  modificando as cores)
+  4 - Na secao "Quem somos", adicionar links para as redes sociais (assim como no footer)
+  5 - Ao inves de Redimensionar a img do titulo em telas menores, certas partes dela deveriam ser 
+  focadas (como um corte na img)
 
+Ideias em desenvolvimento
+  1 - Seção Universo
+  2 - Adicionar jquery e modificar o js
+  3 - Adicionar area onde pessoas podem enviar review sobre o site 
+
+Mudanças nessa atualização
+  1 - O site agora é mais responsivo no celular (letras e padding tem alteracoes de tamanho mais
+  para uma melhor visualizacao)
+  2 - O botão da secao To-Watch teve nome alterado e nova "animação"
+  3 - Adicionado text-shadow ao titulo
+  4 - A secao Whats-it agora tem tres simbolos em cima e dois em baixo
+  5 - Links para as redes sociais no footer foram redimensionados e bugs com cores foram 
+  corrigidos
+  6 - Aumento no tamanho do texto do copyright
+  7 - O css do site inteiro sofreu Refactoring
+
+  OBS: A ordem que as atts serão feitas não é necessariamente a ordem acima
 -->
