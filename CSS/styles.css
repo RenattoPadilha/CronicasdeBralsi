@@ -1,3 +1,87 @@
+/* Section-basics (background/color/padding/position/text-align/z-index) */
+
+/*General*/
+.section-basics{
+  background-color: #222831;
+  color: #eeeeee;
+  padding: 5% 15%;
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+
+/*Specific*/
+#title .section-basics{
+  background-color: transparent;
+  background-image: url("../Imagens/Fundo-inicial.png");
+  background-size: 100% 100%;
+  color: black;
+  height: 600px;  
+  padding: 5% 5%;
+  text-align: left;
+}
+
+#who-we-are .section-basics{
+  background-color: #eeeeee;
+  color: #222831;
+  padding: 5% 12%;
+  text-align: left;
+  z-index: 1;
+}
+
+#footer .section-basics{
+  background-color: #000;
+  padding: 2% 0%;
+}
+/*------------------------------------------------*/
+/* Letters */
+
+/*General*/
+body h1, h2, h3, h4, h5, h6{
+  font-family: "Coda Caption", sans-serif;
+} 
+
+body p{
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 0;
+}
+
+/*Specific titles*/
+#title h1 {
+  display: table-cell; 
+  font-size: 5rem;
+  text-shadow: 5px 5px #fff;
+  vertical-align: middle;
+}
+
+#to-watch h1{
+  font-size: 3.75rem;
+}
+
+#who-we-are h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+/*Specific paragraphs*/
+#whats-it p.p-like-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+
+#who-we-are p{
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+#footer p{
+  font-size: 18px;
+  font-weight: 100;
+}
+/*------------------------------------------------*/
+/*CSS divided for each section*/
+
 /* Navbar */
 nav{
   background-color: #000000;
@@ -15,34 +99,79 @@ nav{
   padding: 0 0 0 5%;
 }
 
-
 /* Title */
-
-#title {
-  background-image: url("../Imagens/Fundo-inicial.png");
-  background-size: 100% 100%;
-  color: black;
-  height: 600px;
-  width: 100%;
-}
-
-#title .container-fluid {
-  padding: 5% 5%;
-  height: 100%;
-}
-
 #title .title-padding{
   height: 100%;
   padding-right: 50%;
-  display:table;
+  display: table;
 }
 
-#title h1 {
-  font-family: "Coda Caption", sans-serif;
-  font-size: 5rem;
-  display:table-cell; 
-  vertical-align:middle;
+/* What's it? */
+.destaques{
+  padding: 3% 5% 2%;
+  margin-left: auto;
+  margin-bottom: 30px;
 }
+
+.destaques-baixo{
+  max-width: 66.6666666%;
+}
+
+.destaques-baixo.direita{
+  margin-left: 0;
+  margin-bottom: 15px;
+}
+
+.imagens-destaque{
+  height: 50px;
+  margin-bottom: 5px;
+}
+
+/* Who we are */
+#who-we-are img{
+  left: 15%;
+  margin-left: -15px;
+  margin-top: -52%;
+  position: absolute;
+  top: 50%;
+  width: 110%;
+}
+
+/* To Watch */
+.btn{
+  margin-top: 20px;
+  color: #eeeeee;
+  transition: background-color 1s;
+}
+
+.btn-animated{
+  background-color: #6441a5;
+}
+
+.btn-outline-light:hover{
+  background-color: #6441a5 !important;
+  color: #eeeeee;
+}
+
+/* Footer */
+.link-footer{
+  font-size: 25px;
+  margin: 10px;
+  margin-bottom: 15px;
+  color: #007bff;
+}
+
+.link-footer:visited{
+  color: #007bff;
+}
+
+.link-footer:hover{
+  color: #00adb5;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+/*------------------------------------------------*/
+/* Media Querys */
 
 @media (max-width: 1350px) and (min-width: 1201px){
   #title .title-padding{
@@ -56,164 +185,52 @@ nav{
   }
 }
 
-@media (max-width: 992px) and (min-width: 0px){
+@media (max-width: 992px){
+  /*Title*/
   #title h1{
     display: inline-block;
   }
   #title .title-padding{
-    padding-right: 0;
     text-align: center;
+    padding-right: 0;
     padding-top: 50px;
+  }
+  /* What's it? */
+  .destaques-baixo{
+    max-width: 100%;
+  }
+  #whats-it .section-basics {
+    padding: 5% 15% 5%;
+  }
+  /* Who we are */
+  #who-we-are .col-lg-6{
+    text-align: center;
+  }
+
+  #who-we-are img{
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    position: static;
+    top: 0;
+    width: 80%;
   }
 }
 
-@media (max-width: 650px) and (min-width: 586px){
+@media (max-width: 650px){
+  /*Title*/
   #title .title-padding{
     padding-top: 60px;
   }
   #title h1{
     font-size: 4.5rem;    
   }
-}
-
-@media (max-width: 585px){
-  #title .title-padding{
-    padding-top: 70px;
+  /* To Watch*/
+  #to-watch h1{
+    font-size: 3.25rem;    
   }
-  #title h1{
-    font-size: 4rem;
-  } 
-}
-
-
-
-/* What's it? */
-
-#whats-it {
-  background-color: #222831;
-  color: #eeeeee;
-  text-align: center;
-  position: relative;
-  z-index: 2;
-}
-
-#whats-it .container-fluid {
-  padding: 5% 15% 5%;
-}
-
-#whats-it h3 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-}
-
-.destaques{
-  background-color: #222831;
-  
-  padding: 3% 5% 2%;
-}
-
-.destaques-cima{
-  max-width: 66.6666666%;
-}
-
-.destaques{
-  margin-left: auto;
-  margin-bottom: 30px;
-}
-
-.col-lg-6.col-md-6:nth-child(2) .destaques{
-  margin-left: 0;
-}
-
-.imagens-destaque{
-  height: 50px;
-  margin-bottom: 5px;
-}
-
-#whats-it p{
-  margin-bottom: 0px;
-} 
-
-@media (max-width: 992px){
-  .destaques-cima{
-    max-width: 100%;
-  }
-  #whats-it .container-fluid {
-    padding: 5% 15% 5%;
-  }
-}
-
-/* Universe */
-
-#universe {
-  background-color: #eeeeee;
-  color: #222831;
-  text-align: center;
-  position: relative;
-  z-index: 2;
-}
-
-#universe .container-fluid {
-  padding: 7% 10%;
-}
-
-#universe h2 {
-  font-family: "Coda Caption", sans-serif;
-  font-size: 3rem;
-  margin: 0;
-  padding-bottom: 10%;
-}
-
-/* Who we are */
-
-#who-we-are {
-  background-color: #eeeeee;
-}
-
-#who-we-are .container-fluid{
-  padding: 5% 12%;
-}
-
-#who-we-are h2 {
-  font-family: "Coda Caption", sans-serif;
-  font-size: 3rem;
-  margin-bottom: 20px;
-}
-#who-we-are p{
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 1.5rem;
-  margin-bottom: 0;
-}
-
-#who-we-are img{
-  position: absolute;
-  width: 110%;
-  left: 15%;
-  margin-left: -15px;
-  z-index: 1;
-  top: 50%;
-  margin-top: -52%;
-}
-
-
-@media (max-width: 992px){
-  #who-we-are .col-lg-6{
-    text-align: center;
-  }
-
-  #who-we-are img{
-    position: static;
-    width: 80%;
-    left: 0;
-    top: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
-  }
-}
-
-@media (max-width: 650px){
+  /* Who-we-are*/
   #who-we-are h2{
     font-size: 2.5rem;    
   }
@@ -222,76 +239,47 @@ nav{
   }
 }
 
-/* To Watch */
-
-#to-watch {
-  background-color: #222831;
-  color: #ffffff;
-  text-align: center;
-  position: relative;
-  z-index: 2;
-}
-
-#to-watch .container-fluid {
-  padding: 5% 15%;
-}
-
-#to-watch h1{
-  font-family: "Coda Caption", sans-serif;
-  font-size: 3.75rem;
-}
-
-.btn{
-  margin-top: 20px;
-}
-
-#to-watch h4{
-  margin-bottom: 0px;
-}
-
-.btn-outline-light:hover{
-  background-color: #6441a5 !important;
-  color: #eeeeee;
-}
-
-@media (max-width: 650px) and (min-width: 586px){
+@media (max-width: 585px){
+  /*Title*/
+  #title .title-padding{
+    padding-top: 70px;
+  }
+  #title h1{
+    font-size: 4rem;
+  } 
+  /* To Watch*/
   #to-watch h1{
-    font-size: 3.25rem;    
+    font-size: 2.75rem;
+  }
+  #to-watch .btn{
+    margin-top: 5px;
   }
 }
 
-@media (max-width: 585px){
-  #to-watch h1{
-    font-size: 3rem;
+@media (max-width: 450px){
+  #title .title-padding{
+    padding-top: 50px;
+  }
+
+  #whats-it .section-basics, #who-we-are .section-basics, #to-watch .section-basics{
+    padding: 5%;
+  }
+
+  #title h1{
+    font-size: 3.50rem;
   } 
-}
-
-/* Footer */
-
-#footer .container-fluid{
-  background-color: #000000;
-  color: #eeeeee !important;
-  text-align: center;
-  padding: 2% 0% 2%;
-}
-
-#footer p{
-  font-family: "Roboto";
-  font-weight: 100;
-  font-size: 15px;
-}
-
-.link-footer{
-  font-size: 20px;
-  margin: 10px;
-  margin-bottom: 15px;
-}
-
-.link-footer:visited{
-  color: #eeeeee;
-}
-
-.link-footer:hover{
-  color: #00adb5;
-  text-decoration: none;
+  /* To Watch*/
+  #to-watch h1{
+    font-size: 2.50rem;
+  } 
+  #who-we-are h2{
+    font-size: 2.20rem;    
+    margin-bottom: 15px;
+  }
+  #who-we-are p{
+    font-size: 1.10rem;    
+  }
+  #to-watch h4{
+    font-size: 1.3rem; 
+  }
 }
