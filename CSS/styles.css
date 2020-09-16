@@ -1,7 +1,7 @@
 /* Section-basics (background/color/padding/position/text-align/z-index) */
 
 /*General*/
-.section-basics{
+.section-basics {
   background-color: #222831;
   color: #eeeeee;
   padding: 5% 15%;
@@ -11,17 +11,17 @@
 }
 
 /*Specific*/
-#title .section-basics{
+#title .section-basics {
   background-color: transparent;
   background-image: url("../Imagens/Fundo-inicial.png");
   background-size: 100% 100%;
   color: black;
-  height: 600px;  
+  height: 600px;
   padding: 5% 5%;
   text-align: left;
 }
 
-#who-we-are .section-basics{
+#who-we-are .section-basics {
   background-color: #eeeeee;
   color: #222831;
   padding: 5% 12%;
@@ -29,7 +29,7 @@
   z-index: 1;
 }
 
-#footer .section-basics{
+#footer .section-basics {
   background-color: #000;
   padding: 2% 0%;
 }
@@ -37,24 +37,29 @@
 /* Letters */
 
 /*General*/
-body h1, h2, h3, h4, h5, h6{
+body h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Coda Caption", sans-serif;
-} 
+}
 
-body p{
+body p {
   font-family: "Roboto", sans-serif;
   margin-bottom: 0;
 }
 
 /*Specific titles*/
 #title h1 {
-  display: table-cell; 
+  display: table-cell;
   font-size: 5rem;
   text-shadow: 5px 5px #fff;
   vertical-align: middle;
 }
 
-#to-watch h1{
+#to-watch h1 {
   font-size: 3.75rem;
 }
 
@@ -67,15 +72,15 @@ body p{
 #whats-it p.p-like-title {
   font-size: 1.75rem;
   font-weight: 700;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
-#who-we-are p{
+#who-we-are p {
   font-size: 1.5rem;
   font-weight: 300;
 }
 
-#footer p{
+#footer p {
   font-size: 18px;
   font-weight: 100;
 }
@@ -83,11 +88,11 @@ body p{
 /*CSS divided for each section*/
 
 /* Navbar */
-nav{
+nav {
   background-color: #000000;
 }
 
-.navbar{
+.navbar {
   padding-left: 0px !important;
 }
 
@@ -100,35 +105,35 @@ nav{
 }
 
 /* Title */
-#title .title-padding{
+#title .title-padding {
   height: 100%;
   padding-right: 50%;
   display: table;
 }
 
 /* What's it? */
-.destaques{
+.destaques {
   padding: 3% 5% 2%;
   margin-left: auto;
   margin-bottom: 30px;
 }
 
-.destaques-baixo{
+.destaques-baixo {
   max-width: 66.6666666%;
 }
 
-.destaques-baixo.direita{
+.destaques-baixo.direita {
   margin-left: 0;
   margin-bottom: 15px;
 }
 
-.imagens-destaque{
+.imagens-destaque {
   height: 50px;
   margin-bottom: 5px;
 }
 
 /* Who we are */
-#who-we-are img{
+#who-we-are img {
   left: 15%;
   margin-left: -15px;
   margin-top: -52%;
@@ -137,35 +142,43 @@ nav{
   width: 110%;
 }
 
+.inline-links {
+  color: inherit;
+}
+
+.inline-links:visited {
+  color: inherit;
+}
+
 /* To Watch */
-.btn{
+.btn {
   margin-top: 20px;
   color: #eeeeee;
   transition: background-color 1s;
 }
 
-.btn-animated{
+.btn-animated {
   background-color: #6441a5;
 }
 
-.btn-outline-light:hover{
+.btn-outline-light:hover {
   background-color: #6441a5 !important;
   color: #eeeeee;
 }
 
 /* Footer */
-.link-footer{
+.link-footer {
   font-size: 25px;
   margin: 10px;
   margin-bottom: 15px;
   color: #007bff;
 }
 
-.link-footer:visited{
+.link-footer:visited {
   color: #007bff;
 }
 
-.link-footer:hover{
+.link-footer:hover {
   color: #00adb5;
   text-decoration: none;
   transition: color 0.5s;
@@ -173,41 +186,41 @@ nav{
 /*------------------------------------------------*/
 /* Media Querys */
 
-@media (max-width: 1350px) and (min-width: 1201px){
-  #title .title-padding{
+@media (max-width: 1350px) and (min-width: 1201px) {
+  #title .title-padding {
     padding-right: 45%;
   }
 }
 
-@media (max-width: 1200px) and (min-width: 993px){
-  #title .title-padding{
+@media (max-width: 1200px) and (min-width: 993px) {
+  #title .title-padding {
     padding-right: 35%;
   }
 }
 
-@media (max-width: 992px){
+@media (max-width: 992px) {
   /*Title*/
-  #title h1{
+  #title h1 {
     display: inline-block;
   }
-  #title .title-padding{
+  #title .title-padding {
     text-align: center;
     padding-right: 0;
     padding-top: 50px;
   }
   /* What's it? */
-  .destaques-baixo{
+  .destaques-baixo {
     max-width: 100%;
   }
   #whats-it .section-basics {
     padding: 5% 15% 5%;
   }
   /* Who we are */
-  #who-we-are .col-lg-6{
+  #who-we-are .col-lg-6 {
     text-align: center;
   }
 
-  #who-we-are img{
+  #who-we-are img {
     left: 0;
     margin-left: auto;
     margin-right: auto;
@@ -218,68 +231,70 @@ nav{
   }
 }
 
-@media (max-width: 650px){
+@media (max-width: 650px) {
   /*Title*/
-  #title .title-padding{
+  #title .title-padding {
     padding-top: 60px;
   }
-  #title h1{
-    font-size: 4.5rem;    
+  #title h1 {
+    font-size: 4.5rem;
   }
   /* To Watch*/
-  #to-watch h1{
-    font-size: 3.25rem;    
+  #to-watch h1 {
+    font-size: 3.25rem;
   }
   /* Who-we-are*/
-  #who-we-are h2{
-    font-size: 2.5rem;    
+  #who-we-are h2 {
+    font-size: 2.5rem;
   }
-  #who-we-are p{
-    font-size: 1.25rem;    
+  #who-we-are p {
+    font-size: 1.25rem;
   }
 }
 
-@media (max-width: 585px){
+@media (max-width: 585px) {
   /*Title*/
-  #title .title-padding{
+  #title .title-padding {
     padding-top: 70px;
   }
-  #title h1{
+  #title h1 {
     font-size: 4rem;
-  } 
+  }
   /* To Watch*/
-  #to-watch h1{
+  #to-watch h1 {
     font-size: 2.75rem;
   }
-  #to-watch .btn{
+  #to-watch .btn {
     margin-top: 5px;
   }
 }
 
-@media (max-width: 450px){
-  #title .title-padding{
+@media (max-width: 450px) {
+  #title .title-padding {
     padding-top: 50px;
   }
 
-  #whats-it .section-basics, #who-we-are .section-basics, #to-watch .section-basics{
+  #whats-it .section-basics,
+  #who-we-are .section-basics,
+  #to-watch .section-basics {
     padding: 5%;
   }
 
-  #title h1{
-    font-size: 3.50rem;
-  } 
+  #title h1 {
+    font-size: 3.5rem;
+  }
   /* To Watch*/
-  #to-watch h1{
-    font-size: 2.50rem;
-  } 
-  #who-we-are h2{
-    font-size: 2.20rem;    
+  #to-watch h1 {
+    font-size: 2.5rem;
+  }
+  #who-we-are h2 {
+    font-size: 2.2rem;
     margin-bottom: 15px;
   }
-  #who-we-are p{
-    font-size: 1.10rem;    
+  #who-we-are p {
+    font-size: 1.1rem;
   }
-  #to-watch h4{
-    font-size: 1.3rem; 
+  #to-watch h4 {
+    font-size: 1.3rem;
   }
 }
