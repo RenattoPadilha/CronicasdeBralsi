@@ -1,6 +1,6 @@
 # Mudanças nessa atualização
 
-1 - O site agora é mais responsivo no celular (letras e padding tem alteracoes de tamanho mais para uma melhor visualizacao)
+1 - Imagem do titulo agora é cortada (css: background cover + background position) para evitar redimensionamentos que a tirasse da proporcao original
 
 2 - O botão da secao To-Watch teve nome alterado e nova "animação"
 
@@ -19,12 +19,6 @@
 1 - Posicionar o cursor em certos nomes como RPG 5e, Roll20 e Discord, aparecerá uma pequena descrição do que são essas coisas.
 
 2 - Adicionar ao cursor o simbolo de help aos locais com nomes especificos
-
-3 - Remodelar o css dos links que estao no corpo do texto (colocando simbolo no cursor e modificando as cores)
-
-4 - Na secao "Quem somos", adicionar links para as redes sociais (assim como no footer)
-
-5 - Ao inves de Redimensionar a img do titulo em telas menores, certas partes dela deveriam ser focadas (como um corte na img)
 
 # Ideias em desenvolvimento
 
