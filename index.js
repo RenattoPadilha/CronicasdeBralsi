@@ -1,17 +1,18 @@
-document.querySelector(".coming-soon").addEventListener("click", alertaSecaoIncompleta);
+$(".coming-soon").click(alertaSecaoIncompleta);
 btnAnimated();
 
 function alertaSecaoIncompleta() {
-    alert("Essa seção do site ainda está sendo produzida, em breve será adicionada.");
+  alert(
+    "Essa seção do site ainda está sendo produzida, em breve será adicionada."
+  );
 }
 
 function btnAnimated() {
-    document.querySelector("#to-watch .btn").classList.add("btn-animated");
-    setTimeout(function () {
-        document.querySelector("#to-watch .btn").classList.remove("btn-animated");
-
-    }, 500);
-    setTimeout(function () {
-        btnAnimated();
-    }, 2400);
+  $("#to-watch .btn").addClass("btn-animated");
+  setTimeout(function () {
+    $("#to-watch .btn").removeClass("btn-animated");
+  }, 500);
+  setTimeout(function () {
+    btnAnimated();
+  }, 2400);
 }
