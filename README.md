@@ -2,9 +2,9 @@
 
 1 - Imagem do titulo agora é cortada (css: background cover + background position) para evitar redimensionamentos que a tirasse da proporcao original
 
-2 - O botão da secao To-Watch teve nome alterado e nova "animação"
+2 - Adicionando inline-links
 
-3 - Adicionado text-shadow ao titulo
+3 - Adicionado jQuery
 
 4 - A secao Whats-it agora tem tres simbolos em cima e dois em baixo
 
@@ -24,10 +24,6 @@
 
 1 - Seção Universo
 
-2 - Adicionar jquery e modificar o js
-
-3 - Adicionar area onde pessoas podem enviar review sobre o site
+2 - Adicionar area onde pessoas podem enviar review sobre o site
 
 OBS: A ordem que as atts serão feitas não é necessariamente a ordem acima
-
---Adicionado inline-links
